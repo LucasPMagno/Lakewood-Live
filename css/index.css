@@ -1,0 +1,46 @@
+/* global */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* classes */
+.navbar {
+    background-color: #0a442e;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10rem;
+}
+
+.navbar-item {
+    display: block;
+    padding: .5rem 0rem;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-family: monospace, Helvetica, sans-serif;
+    color: #888;
+    mix-blend-mode: luminosity;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #888;
+    mix-blend-mode: luminosity;
+    transition: 0.1s ease-in-out color;
+}
+
+.navbar-item a:hover {
+    color:#ddd;
+}
+
+/* individuals */
+.home {
+    color: #fff;
+    mix-blend-mode: luminosity;
+}

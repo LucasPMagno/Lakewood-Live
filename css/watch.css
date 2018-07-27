@@ -1,0 +1,37 @@
+body {
+    background-color: #222;
+    color: #eee;
+    font-family: monospace, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+div {
+    font-size: 12vw;
+}
+
+
+a, p{
+    font-size: 3vw;
+    text-decoration: none;
+    color: #eee;
+}
+
+a {
+    text-decoration: underline;
+    transition: .1s ease-in-out color, .1s ease-in-out font-size;
+}
+
+a:visited {
+    color: #eee;
+}
+
+a:hover {
+    color: #555;
+    cursor: pointer;
+    font-size: 3.5vw;
+}
+
+p {
+    font-size: 3vw;
+}
