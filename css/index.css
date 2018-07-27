@@ -1,11 +1,20 @@
+/* import */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto');
+
 /* global */
+
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    color: #eee;
 }
 
+body {
+    background: #222
+}
 /* classes */
+
 .navbar {
     background-color: #0a442e;
     padding: 0px;
@@ -20,7 +29,6 @@
 
 .navbar-item {
     display: block;
-    padding: .5rem 0rem;
     padding: .5rem 2rem;
     font-size: 2rem;
     font-family: monospace, Helvetica, sans-serif;
@@ -36,11 +44,94 @@
 }
 
 .navbar-item a:hover {
-    color:#ddd;
+    color: #ddd;
+}
+
+.row {
+    margin: auto;
+    width: 100%;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+
+.latest-videos-title {
+    text-align: center;
+    font-family: 'Montserrat', 'Roboto', Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.video-item {
+    padding: .3rem;
+    display: inline-block;
+    width: auto;
+    padding-bottom: 1rem;
+}
+
+.video-title {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /* individuals */
+
 .home {
     color: #fff;
     mix-blend-mode: luminosity;
 }
+
+.video-wrapper {
+    width:60%;
+    height:100%;
+    margin:0;
+}
+
+.newest-video {
+    padding: 2rem;
+    position: relative;
+}
+
+.newest-video .video-ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+}
+
+.latest-video-iframe {
+    position: absolute;
+    padding: 3rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    margin: 0rem 3rem;
+}
+
+.footer {
+    text-align: center;
+    color: #aaa;
+    padding: 2rem 0rem 1rem 0rem;
+    font-family: 'Open Sans';
+}
+
+@media (max-aspect-ratio: 10/7) {
+    .navbar-item {
+        padding: 2rem 2rem;
+        font-size: 3rem;
+    }
+    .video-wrapper {
+    width:100%;
+    }
+}
+
+
+
+
+
+
+/* width="1066px" height="600px" */

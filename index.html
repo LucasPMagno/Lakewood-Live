@@ -6,30 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lakewood Live</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <nav class="navbar container">
-        <div>
-            <ul class="navbar-list">
-                <li class="navbar-item home">Home</li>
-                <li class="navbar-item">
-                    <a href="/watch.html">Watch</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="/soon-staff.html">Staff</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item home">Home</li>
+            <li class="navbar-item">
+                <a target="_blank"href="/watch.html">Watch</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/soon-staff.html">Staff</a>
+            </li>
+        </ul>
     </nav>
-    <header>
-        
-    </header>
+    <section class="section-1">
+        <div class="video-wrapper">
+            <div class="newest-video" id="newest-video">
+                <img class="video-ratio" src="http://placehold.it/16x9" />
+                <iframe id="latest-lwl" src="" class="latest-video-iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="row" id="video-container">
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2018 Lucas Magno</p>
+            <p>
+                <a target="_blank"href="mailto:lrhslive@gmail.com?subject=lakewood live website contact">Contact</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
