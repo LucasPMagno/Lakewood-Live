@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123000678-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123000678-1');
+    </script>
+
     <title>What is the staff page going to be?</title>
     <style>
         * {
@@ -12,39 +26,47 @@
             text-align: center;
             color: #eee;
         }
+
         body {
             margin: auto;
             width: 45%;
             background-color: #222;
         }
+
         a {
             text-decoration: underline;
             font-family: "Comic Sans MS";
             transition: 1s ease-in-out color, 1s ease-in-out font-size;
             position: relative;
         }
+
         p {
             text-align: left;
             font-size: 1.21rem;
         }
+
         h3 {
             font-size: 1.7rem;
             font-family: 'Courier New', Courier, monospace
         }
+
         a:hover {
             cursor: pointer;
             color: #888;
             font-size: 10rem;
         }
+
         iframe {
             display: none;
             margin: auto;
             width: 100%;
             height: 58rem;
         }
+
         .rick-rolled {
             display: none;
         }
+
         @media(max-aspect-ratio: 10/7) {
             body {
                 margin: auto;
@@ -53,15 +75,23 @@
         }
     </style>
 </head>
+
 <body>
     <h3>So... What is this thing?</h3>
-    <p>The staff page will be for those working on Lakewood Live (TV 3/4, possibly 2). If you are part of the crew you will have an account here, with the account (and the permissions necessary) you will be able to upload videos to the Youtube channel where they will be unlisted until approved by one of the executives or Ms. Pellicone.</p>
+    <p>The staff page will be for those working on Lakewood Live (TV 3/4, possibly 2). If you are part of the crew you will
+        have an account here, with the account (and the permissions necessary) you will be able to upload videos to the Youtube
+        channel where they will be unlisted until approved by one of the executives or Ms. Pellicone.</p>
     <h3>That is it?</h3>
-    <p>In short, no. The problem is I don't know <em>exactly</em> what to do. If you have an idea submit it <a id="here" onclick=
-        "document.getElementById('form').style.display='block';
+    <p>In short, no. The problem is I don't know
+        <em>exactly</em> what to do. If you have an idea submit it
+        <a id="here" onclick="document.getElementById('form').style.display='block';
         document.getElementById('extra-text').style.display='inline';
-        ">here</a><span title="Yeah..."class="rick-rolled" id="extra-text">, or you know, down here \/</span></p>
-    <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSf1qdFJOHDarkRRY1Jptb4W0CVh6gGSqhKbg9LDz2eaaso66Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        ">here</a>
+        <span title="Yeah..." class="rick-rolled" id="extra-text">, or you know, down here \/</span>
+    </p>
+    <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSf1qdFJOHDarkRRY1Jptb4W0CVh6gGSqhKbg9LDz2eaaso66Q/viewform?embedded=true"
+        frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <p id="extra-text" class="rick-rolled">You can also talk to me (Lucas Magno) the same way people did back in the 1980s</p>
 </body>
+
 </html>
