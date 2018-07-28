@@ -29,5 +29,5 @@ $.get(recentVideos, (data) => {
 
 $.get(recentLWL, (data) => {
     console.log(data);
-    document.getElementById('latest-lwl').src=`https://www.youtube.com/embed/${data.items["0"].snippet.resourceId.videoId}`;
+    document.getElementById('latest-lwl').src=`https://www.youtube.com/embed/${data.items["0"].snippet.resourceId.videoId}?rel=0&amp;&modestbranding=1&amp;color=white&amp;&listType=playlist&amp;list=PLyXhNarRdOEy8Kz3VRgHsq6grb6jlE3Z6`;
 });
