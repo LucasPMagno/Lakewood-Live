@@ -1,10 +1,10 @@
 .container {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 30rem;
+    padding-left: 30rem;
     color: #eee;
     font-family: monospace, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 5rem;
 }
 
 body {
@@ -16,13 +16,13 @@ body {
 }
 
 .a {
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #eee;
 }
 
 .p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #eee;
 }
@@ -39,8 +39,12 @@ body {
 .a:hover {
     color: #555;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     position: translate()
+}
+
+#appear {
+    display: none;
 }
 
 @media(max-width:960px) {

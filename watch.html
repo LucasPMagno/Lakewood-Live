@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Watch Redirect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=https://iframe.dacast.com/b/52199/c/81397" />
+    <meta http-equiv="refresh" content="0; url=./assets/Lakewood Live.vlc" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="\css\watch.css" />
     <link rel="stylesheet" href="./css/nav.css" Content-type="text/css">
@@ -21,6 +21,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-123000678-1');
+
     </script>
 
 </head>
@@ -43,9 +44,23 @@
         </ul>
     </nav>
     <div class="container">
-        <div class="div">Loading...</div>
+        <div class="div">Instructions:</div>
         <p class="p">
-            <a class="a" href="https://iframe.dacast.com/b/52199/c/81397">Click here</a> if you have not been redirected automatically.</p>
+            A file called "Lakewood Live.vlc" has been downloaded (If not,
+            <a class="a" href="./assets/Lakewood Live.vlc">click here</a>).
+            if you click on the downloaded file, it should open VLC Player with the streaming link. If it does not,
+            <a class="a" onclick="document.getElementById('appear').style.display = 'block';">click here.</a>
+        </p>
+        <div id="appear">
+            <p class="p">Go to the file that was downloaded. Right click it, then click on "Open with" and then select VLC Media Player,
+                if VLC is not listed, select "choose another app" and find it from the dropdown, if it isn't there search
+                for VLC and open it up. On the top left corner click on "Media", then "open network stream" then paste rtp://@239.149.0.1:5004
+                into the box and press "Play".
+                <p class="p">If none of this works and you cannot watch Lakewood Live any other way (such as using channel 2, or the new
+                    TVs) email pelliconej@manateeschools.net</p>
+            </p>
+        </div>
+
     </div>
 </body>
 
