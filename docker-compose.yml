@@ -3,11 +3,11 @@ services:
   node:
     image: "node:8"
     user: "node"
-    working_dir: /main
+    working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
-      - ./main
+      - ./:/home/node/app
     expose:
       - "8001"
     command: "npm start"
