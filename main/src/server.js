@@ -18,5 +18,5 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(8001, () => {
-    console.log('lucaspmagno running at http://localhost:8001');
+    console.log('lrhslive running at http://localhost:8001');
 })
